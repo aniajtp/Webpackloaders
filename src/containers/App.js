@@ -9,8 +9,6 @@ ReactDOM.render(
     document.getElementById('app')
 );
 
-import React from 'react';
-
 class App extends React.Component {
     constructor(props){
         super(props);
@@ -30,12 +28,12 @@ class App extends React.Component {
 
 export default App;
 
-removeTodo(id){
+removeTodo(id) {
     const remainder = this.state.data.filter(todo => todo.id !== id);
     this.setState({data: remainder});
 }
 
-render(){
+render() {
     return (
         <div className={style.TodoApp}>
             Tutaj pojawią się komponenty naszej aplikacji.
